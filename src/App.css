@@ -1,0 +1,19 @@
+.header_app{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem;
+}
+.btn_app{
+    background-color: #555A88;
+    color: white;
+    border: none;
+    padding: 0.5em 1em 0.5em 2em;
+}
+.users__container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
