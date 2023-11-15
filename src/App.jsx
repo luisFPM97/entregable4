@@ -46,6 +46,7 @@ const handleNewUser =()=>{
       <Alert
       isAlertDisable={isAlertDisable}
       setIsAlertDisable={setIsAlertDisable}
+      isEdit={isEdit}
       />
       <div className='users__container'>
         {
@@ -58,6 +59,7 @@ const handleNewUser =()=>{
               setIsDisable={setIsDisable}
               setIsEdit={setIsEdit}
               setIsAlertDisable={setIsAlertDisable}
+              
             />
           ))
         }
