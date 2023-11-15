@@ -1,0 +1,18 @@
+.alert-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 150ms ease;
+}
+.alert__disable{
+    transform: scale(0);
+}
