@@ -25,6 +25,7 @@ function App() {
 const handleNewUser =()=>{
   setIsDisable(false)
   setIsEdit(false)
+  setIsAlertDelete(false)
 }
 
   return (
