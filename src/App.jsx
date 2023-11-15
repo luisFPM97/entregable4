@@ -41,7 +41,6 @@ const handleNewUser =()=>{
        setIsDisable={setIsDisable}
        setIsEdit={setIsEdit}
        isEdit={isEdit}
-       isAlertDisable={isAlertDisable}
        setIsAlertDisable={setIsAlertDisable}
       />
       <Alert
@@ -58,6 +57,7 @@ const handleNewUser =()=>{
               setInfoUpdate={setInfoUpdate}
               setIsDisable={setIsDisable}
               setIsEdit={setIsEdit}
+              setIsAlertDisable={setIsAlertDisable}
             />
           ))
         }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles/UserCard.css'
 
-const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit}) => {
+const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setIsAlertDisable}) => {
 
     const handleDelete = ()=>{
         deleteUser('/users', user.id)
@@ -10,7 +10,9 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit}) => 
         setInfoUpdate(user)
         setIsDisable(false)
         setIsEdit(true)
+        setIsAlertDisable(false)
     }
+    
   return (
     <article className="user">
       <header className="user__header">
