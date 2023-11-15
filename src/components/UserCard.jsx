@@ -5,12 +5,13 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setI
 
     const handleDelete = ()=>{
         deleteUser('/users', user.id)
+        setIsAlertDisable(false)
     }
     const handleEdit =()=>{
         setInfoUpdate(user)
         setIsDisable(false)
         setIsEdit(true)
-        setIsAlertDisable(false)
+        
     }
     
   return (
