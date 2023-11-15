@@ -28,7 +28,7 @@
     padding-bottom: 4em;
 }
 .user__name{
-    text-align:left;
+    text-align:center;
 }
 .user__info{
     display: flex;
