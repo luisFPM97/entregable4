@@ -8,9 +8,11 @@ const Alert = ({isAlertDisable,setIsAlertDisable, isEdit,isAlertDelete}) => {
     }
   return (
     <div className={`alert-container ${isAlertDisable && 'alert__disable'}`}>
-        <h3>{`${isEdit && 'Actualizar' || isAlertDelete && 'Eliminar' || 'Crear'} usuario`}</h3>
-        <span>{`'El usuario se ha '${isEdit && 'actualizado' || isAlertDelete && 'eliminado' || 'creado'}`}</span>
-        <button onClick={handleAcept}>Aceptar</button>
+        <section className='alert-container'>
+        <h3 className='litle-info'>{`${isEdit && 'Actualizar' || isAlertDelete && 'Eliminar' || 'Crear'} usuario`}</h3>
+        <span className='alert-info'>{`'El usuario se ha '${isEdit && 'actualizado' || isAlertDelete && 'eliminado' || 'creado'}`}</span>
+        <button className='btn_app' onClick={handleAcept}>Aceptar</button>
+        </section>
     </div>
   )
 }
