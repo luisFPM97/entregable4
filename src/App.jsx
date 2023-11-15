@@ -3,6 +3,7 @@ import './App.css'
 import useCrud from './hooks/useCrud'
 import FormUsers from './components/FormUsers'
 import UserCard from './components/UserCard'
+import Alert from './components/Alert'
 
 function App() {
 
@@ -40,6 +41,7 @@ const handleNewUser =()=>{
        setIsEdit={setIsEdit}
        isEdit={isEdit}
       />
+      <Alert/>
       <div className='users__container'>
         {
           users?.map(user => (
