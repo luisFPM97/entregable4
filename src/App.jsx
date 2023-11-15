@@ -45,29 +45,29 @@ const handleNewUser =()=>{
        isEdit={isEdit}
        setIsAlertDisable={setIsAlertDisable}
       />
-      <Alert
-      isAlertDisable={isAlertDisable}
-      setIsAlertDisable={setIsAlertDisable}
-      isEdit={isEdit}
-      isAlertDelete={isAlertDelete}
-      />
       <div className='users__container'>
         {
           users?.map(user => (
             <UserCard 
-              key={user.id}
-              user={user} 
-              deleteUser ={deleteUser}
-              setInfoUpdate={setInfoUpdate}
-              setIsDisable={setIsDisable}
-              setIsEdit={setIsEdit}
-              setIsAlertDisable={setIsAlertDisable}
-              setIsAlertDelete={setIsAlertDelete}
-              
+            key={user.id}
+            user={user} 
+            deleteUser ={deleteUser}
+            setInfoUpdate={setInfoUpdate}
+            setIsDisable={setIsDisable}
+            setIsEdit={setIsEdit}
+            setIsAlertDisable={setIsAlertDisable}
+            setIsAlertDelete={setIsAlertDelete}
+            
             />
-          ))
-        }
+            ))
+          }
       </div>
+          <Alert
+          isAlertDisable={isAlertDisable}
+          setIsAlertDisable={setIsAlertDisable}
+          isEdit={isEdit}
+          isAlertDelete={isAlertDelete}
+          />
       
     </div>
   )
