@@ -16,7 +16,7 @@
 .alert__disable{
     transform: scale(0);
 }
-.alert-container{
+.alert-containerinfo{
     background-color: white;
     width: 100%;
     max-width: 22em;
