@@ -8,7 +8,7 @@ const Alert = ({isAlertDisable,setIsAlertDisable, isEdit,isAlertDelete}) => {
     }
   return (
     <div className={`alert-container ${isAlertDisable && 'alert__disable'}`}>
-        <h3>{`${isEdit && 'Editar' || 'Crear'} usuario`}</h3>
+        <h3>{`${isEdit && 'Actualizar' || isAlertDelete && 'Eliminar' || 'Crear'} usuario`}</h3>
         <span>{`'El usuario se ha '${isEdit && 'actualizado' || isAlertDelete && 'eliminado' || 'creado'}`}</span>
         <button onClick={handleAcept}>Aceptar</button>
     </div>
