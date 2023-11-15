@@ -12,6 +12,10 @@ useEffect(() => {
   reset(infoUpdate)
 }, [infoUpdate])
 
+const handleConfirm =()=>{
+  setIsAlertDisable(false)
+}
+
 const submit = data =>{
     if(infoUpdate){
         //update
@@ -23,7 +27,7 @@ const submit = data =>{
         createUser('/users',data)
     }
     setIsDisable(true)
-    setIsAlertDisable(false)
+    
     reset({
         email: '',
         password: '',
@@ -106,7 +110,7 @@ const submit = data =>{
             placeholder="url imagen"
           />
         </label>
-        <button className="form__btn">Submit</button>
+        <button onClick={handleConfirm} className="form__btn">Submit</button>
       </form>
     </div>
   );
