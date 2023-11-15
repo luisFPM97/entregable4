@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import './styles/FormUser.css'
 
-const FormUsers =( { createUser, infoUpdate, updateUser, setInfoUpdate, isDisable, setIsDisable, setIsEdit, isEdit })=>{
+const FormUsers =( { createUser, infoUpdate, updateUser, setInfoUpdate, isDisable, setIsDisable, setIsEdit, isEdit,setIsAlertDisable })=>{
 
 
 
@@ -18,10 +18,12 @@ const submit = data =>{
         updateUser('/users', infoUpdate.id, data)
         setInfoUpdate()
         setIsEdit(true)
+        
     }else{
         createUser('/users',data)
     }
     setIsDisable(true)
+    setIsAlertDisable(false)
     reset({
         email: '',
         password: '',

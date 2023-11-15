@@ -2,12 +2,12 @@ import React from 'react'
 import './styles/Alert.css'
 
 
-const Alert = ({isDisable, setIsDisable}) => {
+const Alert = ({isAlertDisable,setIsAlertDisable}) => {
     const handleAcept =()=>{
-        setIsDisable(true)
+        setIsAlertDisable(true)
     }
   return (
-    <div className={`alert-container ${isDisable && 'alert__disable'}`}>
+    <div className={`alert-container ${isAlertDisable && 'alert__disable'}`}>
         <h3>Eliminar/Actualizar/Crear usuario</h3>
         <span>El usuario X se ha actualizado/creado/eliminado</span>
         <button onClick={handleAcept}>Aceptar</button>

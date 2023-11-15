@@ -10,6 +10,7 @@ function App() {
   const [infoUpdate, setInfoUpdate] = useState()
   const [isDisable, setIsDisable] = useState(true)
   const [isEdit, setIsEdit] = useState(true)
+  const [isAlertDisable, setIsAlertDisable] = useState(true)
   const url= 'https://users-crud.academlo.tech'
   const [ users, getUsers, createUser, deleteUser, updateUser ]= useCrud(url)
 
@@ -40,10 +41,12 @@ const handleNewUser =()=>{
        setIsDisable={setIsDisable}
        setIsEdit={setIsEdit}
        isEdit={isEdit}
+       isAlertDisable={isAlertDisable}
+       setIsAlertDisable={setIsAlertDisable}
       />
       <Alert
-      isDisable={isDisable}
-      setIsDisable={setIsDisable}
+      isAlertDisable={isAlertDisable}
+      setIsAlertDisable={setIsAlertDisable}
       />
       <div className='users__container'>
         {
