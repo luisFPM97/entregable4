@@ -32,7 +32,7 @@ const handleNewUser =()=>{
     <div>
       <header className='header_app'>
       <h1 className='title_app'>Usuarios</h1>
-      <button onClick={handleNewUser} className='btn_app'>+ Create new user</button>
+      <button onClick={handleNewUser} className='btn_app'>+ Crear nuevo usuario</button>
       </header>
       <FormUsers
        createUser = {createUser}
