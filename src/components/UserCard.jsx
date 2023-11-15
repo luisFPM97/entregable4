@@ -1,11 +1,12 @@
 import React from 'react'
 import './styles/UserCard.css'
 
-const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setIsAlertDisable}) => {
+const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setIsAlertDisable,setIsAlertDelete}) => {
 
     const handleDelete = ()=>{
         deleteUser('/users', user.id)
         setIsAlertDisable(false)
+        setIsAlertDelete(true)
     }
     const handleEdit =()=>{
         setInfoUpdate(user)
