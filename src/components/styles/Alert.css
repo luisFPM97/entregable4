@@ -25,5 +25,5 @@
     padding: 2.5em 1.5em 2.5em ;
     border-radius: 0.8em;
     gap: 1em;
-    position: relative;
+    position: fixed;
 }
