@@ -41,7 +41,10 @@ const handleNewUser =()=>{
        setIsEdit={setIsEdit}
        isEdit={isEdit}
       />
-      <Alert/>
+      <Alert
+      isDisable={isDisable}
+      setIsDisable={setIsDisable}
+      />
       <div className='users__container'>
         {
           users?.map(user => (
