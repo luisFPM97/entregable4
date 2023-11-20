@@ -34,7 +34,7 @@ const submit = data =>{
         first_name:'',
         last_name:'',
         birthday:'',
-        image_url:''
+        image_url:'https://www.artelista.com/blog/wp-content/uploads/2019/08/Johannes_Vermeer_1632-1675_-_The_Girl_With_The_Pearl_Earring_1666.jpg'
     })
 }
     const handleExit =()=>{
@@ -45,7 +45,7 @@ const submit = data =>{
             first_name:'',
             last_name:'',
             birthday:'',
-            image_url:''
+            image_url:'https://www.artelista.com/blog/wp-content/uploads/2019/08/Johannes_Vermeer_1632-1675_-_The_Girl_With_The_Pearl_Earring_1666.jpg'
         })
         setInfoUpdate()
     }
@@ -64,6 +64,7 @@ const submit = data =>{
             {...register("email")}
             type="email"
             placeholder="E-mail"
+            required
           />
         </label>
         <label className="form__label">
@@ -73,6 +74,7 @@ const submit = data =>{
             {...register("password")}
             type="password"
             placeholder="Password"
+            required
           />
         </label>
         <label className="form__label">
@@ -82,6 +84,7 @@ const submit = data =>{
             {...register("first_name")}
             type="text"
             placeholder="First Name"
+            required
           />
         </label>
         <label className="form__label">
@@ -91,6 +94,7 @@ const submit = data =>{
             {...register("last_name")}
             type="text"
             placeholder="Last Name"
+            required
           />
         </label>
         <label className="form__label">
