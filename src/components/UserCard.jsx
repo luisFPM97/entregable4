@@ -32,7 +32,7 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setI
           </li>
           <li className='user__info'>
             <span className='litle__item' >Birthday</span>
-            <span><i class='bx bx-gift'></i>{user.birthday}</span>
+            <span><i className='bx bx-gift'></i>{user.birthday}</span>
           </li>
         </ul>
         <footer className='btns_form'>

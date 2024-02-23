@@ -19,10 +19,14 @@ const handleConfirm =()=>{
 const submit = data =>{
     if(infoUpdate){
         //update
+        if (data.image_url=="") {
+          data.image_url="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+        }
         updateUser('/users', infoUpdate.id, data)
-        setInfoUpdate()
-        setIsEdit(true)
+        setInfoUpdate(data)
         
+        setIsEdit(true)
+        console.log(data)
     }else{
         createUser('/users',data)
     }
@@ -112,7 +116,7 @@ const submit = data =>{
             {...register("image_url")}
             type="text"
             placeholder="url imagen"
-          />
+            value="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"          />
         </label>
         <button onClick={handleConfirm} className="form__btn">Submit</button>
       </form>
