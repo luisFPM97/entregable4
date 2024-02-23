@@ -12,7 +12,7 @@ function App() {
   const [isEdit, setIsEdit] = useState(true)
   const [isAlertDisable, setIsAlertDisable] = useState(true)
   const [isAlertDelete, setIsAlertDelete] = useState(true)
-  const url= 'https://users-crud.academlo.tech'
+  const url= 'https://users-crud-a9jo.onrender.com'
   const [ users, getUsers, createUser, deleteUser, updateUser ]= useCrud(url)
 
 
