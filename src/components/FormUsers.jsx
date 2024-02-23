@@ -34,7 +34,7 @@ const submit = data =>{
         first_name:'',
         last_name:'',
         birthday:'',
-        image_url:'https://www.artelista.com/blog/wp-content/uploads/2019/08/Johannes_Vermeer_1632-1675_-_The_Girl_With_The_Pearl_Earring_1666.jpg'
+        image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
     })
 }
     const handleExit =()=>{
@@ -45,7 +45,7 @@ const submit = data =>{
             first_name:'',
             last_name:'',
             birthday:'',
-            image_url:'https://www.artelista.com/blog/wp-content/uploads/2019/08/Johannes_Vermeer_1632-1675_-_The_Girl_With_The_Pearl_Earring_1666.jpg'
+            image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
         })
         setInfoUpdate()
     }
