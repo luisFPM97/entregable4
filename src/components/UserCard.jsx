@@ -17,7 +17,7 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setI
     }
     
   return (
-    <article className="user">
+    <article className="user" onClick={handleEdit}>
       <header className="user__header">
         <img className="img__user" src={user.image_url} alt="user-img" />
       </header>
