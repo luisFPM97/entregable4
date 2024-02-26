@@ -38,7 +38,7 @@ const submit = data =>{
         first_name:'',
         last_name:'',
         birthday:'',
-        image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
+        image_url:''
     })
 }
     const handleExit =()=>{
@@ -49,7 +49,7 @@ const submit = data =>{
             first_name:'',
             last_name:'',
             birthday:'',
-            image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
+            image_url:''
         })
         setInfoUpdate()
     }
@@ -116,7 +116,7 @@ const submit = data =>{
             {...register("image_url")}
             type="text"
             placeholder="url imagen"
-            value="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"          />
+            />
         </label>
         <button onClick={handleConfirm} className="form__btn">Submit</button>
       </form>

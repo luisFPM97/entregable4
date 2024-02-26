@@ -1,31 +1,52 @@
 .img__user{
-    width: 350px;
-    height: 300px;
+    height: 350px ;
+    transition: all 0.5s  ease;
+    top: -50%;
 }
 .user{
-    
+    display: flex;
+    flex-direction: column;
     max-width: 300px;
+    height: 500px;
     border-radius: 4px;
-    border: 1px solid #a0a0a0;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     overflow: hidden;
     color: #fff;
     color: black;
     margin: 2rem;
-    
+    transition: all 0.3s  ease;
+}
+.user:hover{
+    .img__user{
+        opacity: 0.8;
+        scale: 1.2;
+    }
+    .info_container{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    scale: 1.05;
+    background-color: #a0a0a042;
 }
 .user__header{
     display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
     justify-content: center;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    height: 350px ;
+    overflow: hidden;
+    
 }
 .info_container{
-    position: relative;
     padding-bottom: 4em;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    height: 150px;
+    transition: all 0.3s  ease;
+    position: relative;
+}   
+.info_container:hover{
+    background-color: #a0a0a0;
+    
 }
 .user__name{
     text-align:center;
