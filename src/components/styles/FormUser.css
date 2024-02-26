@@ -7,14 +7,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0003;
+    background-color: transparent;
     backdrop-filter: blur(2px);
     z-index: 998;
     transform: scale(1);
-    transition: transform 150ms ease;
+    transition: transform 500ms ease;
 }
 .form__disable{
     transform: scale(0);
+    transition: transform 0.1ms ease;
 }
 .form{
     background-color: white;
