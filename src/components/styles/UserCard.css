@@ -39,7 +39,7 @@
 .info_container{
     padding-bottom: 4em;
     bottom: 0;
-    z-index: 998;
+    z-index: 997;
     background-color: white;
     height: 150px;
     transition: all 0.3s  ease;
