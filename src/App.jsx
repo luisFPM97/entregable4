@@ -4,6 +4,7 @@ import useCrud from './hooks/useCrud'
 import FormUsers from './components/FormUsers'
 import UserCard from './components/UserCard'
 import Alert from './components/Alert'
+import BusinessCard from './components/BusinessCard'
 
 function App() {
 
@@ -45,6 +46,7 @@ const handleNewUser =()=>{
        isEdit={isEdit}
        setIsAlertDisable={setIsAlertDisable}
       />
+      
       <div className='users__container'>
         {
           users?.map(user => (
@@ -68,7 +70,6 @@ const handleNewUser =()=>{
           isEdit={isEdit}
           isAlertDelete={isAlertDelete}
           />
-      
     </div>
   )
 }
