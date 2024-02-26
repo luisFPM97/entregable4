@@ -28,6 +28,9 @@ const submit = data =>{
         setIsEdit(true)
         console.log(data)
     }else{
+      if (data.image_url=="") {
+        data.image_url="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
+      }
         createUser('/users',data)
     }
     setIsDisable(true)
@@ -38,7 +41,7 @@ const submit = data =>{
         first_name:'',
         last_name:'',
         birthday:'',
-        image_url:''
+        image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
     })
 }
     const handleExit =()=>{
@@ -49,7 +52,7 @@ const submit = data =>{
             first_name:'',
             last_name:'',
             birthday:'',
-            image_url:''
+            image_url:'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'
         })
         setInfoUpdate()
     }

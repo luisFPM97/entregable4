@@ -11,7 +11,7 @@
     backdrop-filter: blur(2px);
     z-index: 998;
     transform: scale(1);
-    transition: transform 400ms ease;
+    transition: transform 300ms ease;
 }
 .form__disable{
     transform: scale(0);
