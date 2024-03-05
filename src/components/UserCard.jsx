@@ -22,16 +22,18 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setI
         <img className="img__user" src={user.image_url} alt="user-img" />
       </header>
       <section className='info_container'>
+      
         <h3 className='user__name'>
           {user.first_name} {user.last_name}
         </h3>
+        <hr />
         <ul>
           <li className='user__info'>
-            <span className='litle__item' >Email</span>
+            <span className='litle__item' >Email:</span>
             <span>{user.email}</span>
           </li>
           <li className='user__info'>
-            <span className='litle__item' >Birthday</span>
+            <span className='litle__item' >Birthday:</span>
             <span><i className='bx bx-gift'></i>{user.birthday}</span>
           </li>
         </ul>
@@ -43,7 +45,9 @@ const UserCard = ({user, deleteUser, setInfoUpdate, setIsDisable,setIsEdit, setI
           <i className="bx bxs-edit-alt"></i>
         </button>
         </footer>
+        <hr />
       </section>
+      
     </article>
   );
 }

@@ -4,7 +4,8 @@ import useCrud from './hooks/useCrud'
 import FormUsers from './components/FormUsers'
 import UserCard from './components/UserCard'
 import Alert from './components/Alert'
-import BusinessCard from './components/BusinessCard'
+
+import { Lumiflex, Novatrix } from 'uvcanvas'
 
 function App() {
 
@@ -30,10 +31,12 @@ const handleNewUser =()=>{
 }
 
   return (
-    <div>
+    <div className='app'>
+      <div className='image'></div>
       <header className='header_app'>
-      <h1 className='title_app'>Usuarios</h1>
-      <button onClick={handleNewUser} className='btn_app'>+ Crear nuevo usuario</button>
+      <button onClick={handleNewUser} className='btn_app'>+</button>
+      <h1 className='title_app'>User list</h1>
+      
       </header>
       <FormUsers
        createUser = {createUser}
@@ -70,6 +73,8 @@ const handleNewUser =()=>{
           isEdit={isEdit}
           isAlertDelete={isAlertDelete}
           />
+      
+
     </div>
   )
 }

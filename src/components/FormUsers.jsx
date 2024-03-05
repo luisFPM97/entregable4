@@ -60,7 +60,7 @@ const submit = data =>{
   return (
     <div className={`form-container ${isDisable && 'form__disable'}`}>
       <form className="form" onSubmit={handleSubmit(submit)}>
-        <h2 className="form__title">{`${isEdit && 'Editar' || 'Nuevo' } usuario`}</h2>
+        <h2 className="form__title">{`${isEdit && 'Edit' || 'New' } user`}</h2>
         <div onClick={handleExit} className="form__x" >
           <i className="bx bx-x-circle"></i>
         </div>
@@ -113,7 +113,7 @@ const submit = data =>{
           />
         </label>
         <label className="form__label">
-          <span className="form__span">Imagen</span>
+          <span className="form__span">Image</span>
           <input
             className="form__input"
             {...register("image_url")}

@@ -1,14 +1,43 @@
+.image{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/bg.jpg);
+    background-origin: padding-box;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+}
 .header_app{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content:space-between;
+    align-items: center;
     padding: 2rem;
 }
 .btn_app{
-    background-color: #555A88;
-    color: white;
+    width: 60px;
+    font-size: 20px;
+    background-color: rgb(0, 170, 37);
+    color: black;
     border: none;
-    padding: 0.5em 1em 0.5em 2em;
+    display: block;
+    position: fixed;
+    z-index: 998;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    box-shadow: black 0px 0px 20px;
+    font-weight: bold;
+    right: 20px;
+    transition: all 0.2s ease;
+}
+.btn_app:hover{
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px;
+    color: white;
+    font-weight: bold;
+}
+.title_app{
+    color: white;
 }
 .users__container{
     display: flex;
