@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 import './styles/FormUser.css'
 
 const FormUsers =( { createUser, infoUpdate, updateUser, setInfoUpdate, isDisable, setIsDisable, setIsEdit, isEdit,setIsAlertDisable })=>{
 
 
 
-const { handleSubmit, register, reset } = useForm()
+const { handleSubmit, register, reset, formState: { errors } } = useForm()
+
+const [selectedFile, setSelectedFile] = useState(null);
 
 useEffect(() => {
   reset(infoUpdate)
