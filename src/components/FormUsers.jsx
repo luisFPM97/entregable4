@@ -27,7 +27,6 @@ const submit = data =>{
         }
         updateUser('/users', infoUpdate.id, data)
         setInfoUpdate(data)
-        
         setIsEdit(true)
         console.log(data)
     }else{

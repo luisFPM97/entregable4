@@ -5,7 +5,7 @@ import FormUsers from './components/FormUsers'
 import UserCard from './components/UserCard'
 import Alert from './components/Alert'
 
-import { Lumiflex, Novatrix } from 'uvcanvas'
+
 
 function App() {
 
