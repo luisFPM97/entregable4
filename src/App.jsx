@@ -4,6 +4,10 @@ import useCrud from './hooks/useCrud'
 import FormUsers from './components/FormUsers'
 import UserCard from './components/UserCard'
 import Alert from './components/Alert'
+import Bascula from './components/Bascula'
+import { SerialPort } from 'serialport'
+
+
 
 
 
@@ -29,6 +33,42 @@ const handleNewUser =()=>{
   setIsEdit(false)
   setIsAlertDelete(false)
 }
+
+
+
+
+//basculaaaaa
+const port = new SerialPort8('COM1',{
+  baudRate:9600,
+  dataBits:8,
+  parity:'none',
+  stopBits:1,
+  flowControl: false
+});
+// Open the port
+port.open((error) => {
+  if (error) {
+    console.error('Error al abrir el puerto COM:', error);
+    return;
+  }
+
+  console.log('Puerto COM abierto');
+
+  // Set up event listeners
+  port.on('data', (data) => {
+    console.log('Datos recibidos:', data.toString());
+  });
+
+  port.on('error', (error) => {
+    console.error('Error en el puerto COM:', error);
+  });
+
+  port.on('close', () => {
+    console.log('Puerto COM cerrado');
+  });
+});
+
+
 
   return (
     <div className='app'>
@@ -73,7 +113,7 @@ const handleNewUser =()=>{
           isEdit={isEdit}
           isAlertDelete={isAlertDelete}
           />
-      
+      <Bascula/>
 
     </div>
   )

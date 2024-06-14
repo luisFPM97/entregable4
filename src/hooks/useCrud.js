@@ -8,7 +8,7 @@ const useCrud = (baseUrl) => {
         const url=`${baseUrl}${path}/`
         axios.get(url)
         .then(res=>setInfoApi(res.data))
-        .catch(err = console.log(err))
+        
     }
     //post
     const postApi =(path, data)=>{
